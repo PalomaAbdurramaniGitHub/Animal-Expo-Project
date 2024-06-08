@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Encyclopedia - Birds</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="animalCss.css">
+    <link rel="shortcut icon" type="x-icon" href="/foto/logo.jpg">
+
+</head>
+<body>
+
+    <div id="headerPlaceholder"></div>
+
+
+    <div class="container">
+        <div class="animal-wrapper">
+            <div class="animal-search">
+                <h2 class="title">Find Your Favourite Bird Friends</h2>
+                <blockquote>Man is a bird without wings and a bird is a man without sorrow.<br>
+                <cite>— Louis de Bernieres</cite>
+                </blockquote>
+                <div class="animal-search-box">
+                    <input type="text" class="search-control" placeholder="Enter a Bird Type" id="search-input">
+                    <button type="submit" class="search-btn btn" id="search-btn" onclick="fetchData()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="animal-result">
+                <h2 class="title">Your Search Results:</h2>
+            </div>
+            <div class="search-results">
+                <!-- Search results will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <div class="animal-details" id="animal-details">
+        <button type="button" class="btn details-close-btn" id="details-close-btn" onclick="closeDetails()">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="animal-details-content" id="animal-details-content">
+            <h2 class="details-title">Animal Name</h2>
+            <p class="details-category">Category</p>
+            <div class="details-instruct">
+                <h4>Diet:</h4>
+                <p id="details-diet"></p>
+                <h4>Habitat:</h4>
+                <p id="details-habitat"></p>
+                <h4>Origin:</h4>
+                <p id="details-origin"></p>
+                <h4>Weight(Kg):</h4>
+                <p id="details-weight"></p>
+                <h4>Wingspan(Cm):</h4>
+                <p id="details-wingspan"></p>
+                <h4>Description:</h4>
+                <p id="details-description">Description here</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div id="footerPlaceholder" ></div>
+    </footer>
+    <script src="bird.js"></script>
+    <script src="headerFooterMenager.js"></script>
+</body>
+</html>
