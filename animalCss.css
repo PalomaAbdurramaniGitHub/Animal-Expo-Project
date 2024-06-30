@@ -31,7 +31,7 @@ body{
 }
 
 .container{
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 .animal-wrapper{
     max-width: 1280px;
@@ -144,6 +144,16 @@ body{
     box-shadow: 0 0 6px rgb(0, 0, 0);
     overflow: hidden;
 
+}
+
+
+@media screen and (max-width:400px){
+    .search-results{
+        display: block;
+    }
+    .search-result{
+        width: 100%;
+    }
 }
 
 .search-result img{

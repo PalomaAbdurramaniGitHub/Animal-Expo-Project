@@ -64,3 +64,9 @@ main {
 .gallery > div:hover{
     flex: 5;
 }
+
+@media (max-width: 1400px){
+    .gallery > div{
+        flex: 0.1;
+    }
+}
