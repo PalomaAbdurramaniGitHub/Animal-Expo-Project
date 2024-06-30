@@ -1,6 +1,6 @@
 
 // JavaScript për të përfshirë përmbajtjen e header-it nga template
-fetch('header.html')
+fetch('./header.html')
     .then(response => response.text())
     .then(data => {
         const template = document.createElement('template');
@@ -9,7 +9,7 @@ fetch('header.html')
     });
 
 
-fetch('footer.html')
+fetch('./footer.html')
     .then(response => response.text())
     .then(data => {
         const template = document.createElement('template');
